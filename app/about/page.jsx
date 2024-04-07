@@ -13,43 +13,45 @@ const About = () => {
   ];
 
   return (
-    <section className="container mx-auto mt-8">
+    <section className="container mx-auto mt-8 mb-16">
       <h1 className="text-neutral-light text-xl sm:text-3xl font-bold text-center mb-4">
         Sobre
       </h1>
-      <div className="bg-secondary p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl text-primary-contrast font-semibold mb-2">
-          Formação
-        </h2>
-        <ul className="list-disc text-secondary-contrast pl-6">
-          <li>
-            <a href="/about/1" className="hover:text-contrast">
-              Análise e Desenvolvimento de Sistemas - IFPR (Mar/2024)
-            </a>
-          </li>
-        </ul>
-        <h2 className="text-xl text-primary-contrast font-semibold mt-4 mb-2">
-          Experiência
-        </h2>
-        <ul className="list-disc text-secondary-contrast pl-6">
-          <li>
-            <a href="/about/1" className="hover:text-contrast">
-              Estagiário - Corpo de Bombeiros de (Jul/2022 - Dez/2023)
-            </a>
-          </li>
-        </ul>
+      <div className="bg-transparent sm:bg-dark p-2 rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
+          <h2 className="text-xl text-primary-contrast font-semibold mb-2">
+            Formação
+          </h2>
+          <ul className="list-disc text-secondary-contrast pl-6">
+            <li>
+              <a href="/about/1" className="hover:text-contrast">
+                Análise e Desenvolvimento de Sistemas - IFPR (Mar/2024)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
+          <h2 className="text-xl text-primary-contrast font-semibold mt-4 mb-2">
+            Experiência
+          </h2>
+          <ul className="list-disc text-secondary-contrast pl-6">
+            <li>
+              <a href="/about/1" className="hover:text-contrast">
+                Estagiário - Corpo de Bombeiros de (Jul/2022 - Dez/2023)
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="bg-secondary p-6 rounded-lg shadow-lg mt-4">
         <h2 className="text-xl text-primary-contrast font-semibold mb-2">
           Competências
         </h2>
         <ul className="list-disc text-secondary-contrast pl-6">
-          {skills.map((project) => (
-            <li className="mb-2">
-              <h1>{project.title}</h1>
-              <p className="ml-4">{project.desc}</p>
-            </li>
-          ))}
+          <li className="mb-2">
+            <h1>Next.JS | React.JS</h1>
+            <p className="ml-4 text-shadow -green-500">Básico</p>
+          </li>
         </ul>
       </div>
     </section>

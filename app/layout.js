@@ -14,9 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body className={inter.className}>
         <Header />
-        <main className="w-screen h-min-screen flex flex-col items-center justify-center">
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );

@@ -8,7 +8,7 @@ const ProjectDetails = () => {
   const { projectID } = params;
 
   return (
-    <section className="container mx-auto mt-8">
+    <section className="container mx-auto mt-8 mb-16">
       <h1 className="text-3xl font-bold text-center mb-4">Project Details</h1>
       <div className="bg-gray-600 p-6 rounded-lg shadow-lg">
         <h2 className="text-xl font-semibold mb-2">Project ID: {projectID}</h2>
