@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <section className="container mx-auto mt-32 mb-16">
-      <h1 className="text-neutral-light text-xl font-bold text-center mb-4">
+      <h1 className="text-primary dark:text-primary-contrast text-xl font-bold text-center mb-4">
         Sobre
       </h1>
       <div className="bg-transparent mb-8 sm:bg-dark p-2 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -34,7 +34,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <h1 className="text-neutral-light text-xl font-bold text-center mb-4">
+      <h1 className="text-primary text-xl font-bold text-center mb-4">
         Competências
       </h1>
       <div className="bg-transparent sm:bg-dark p-2 rounded-lg grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

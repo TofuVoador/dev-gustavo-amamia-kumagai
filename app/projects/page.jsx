@@ -4,7 +4,9 @@ import React from "react";
 const Projects = () => {
   return (
     <section className="container mx-auto mt-32 mb-16">
-      <h1 className="text-xl font-bold text-center mb-4">Projetos</h1>
+      <h1 className="text-primary dark:text-primary-contrast text-xl font-bold text-center mb-4">
+        Projetos
+      </h1>
       <div className="bg-transparent sm:bg-dark p-2 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
           <p className="text-sm text-secondary-contrast">React</p>
