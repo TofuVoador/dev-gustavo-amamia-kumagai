@@ -2,11 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="container mx-auto mt-8 mb-16">
+    <section className="container mx-auto mt-32 mb-16">
       <h1 className="text-neutral-light text-xl font-bold text-center mb-4">
         Contato
       </h1>
-      <div className="bg-transparent sm:bg-dark p-2 rounded-xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="bg-transparent sm:bg-dark p-2 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
           <h3 className="text-lg mb-2">Whatsapp</h3>
           <a
