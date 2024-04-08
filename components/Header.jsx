@@ -10,41 +10,31 @@ const Header = () => {
         >
           Gustavo Amamia Kumagai
         </a>
-        <nav>
-          <ul className="flex space-x-4 text-xs lg:text-lg">
-            <li>
-              <a
-                href="/"
-                className="text-primary-contrast hover:text-secondary-contrast"
-              >
-                Início
-              </a>
-            </li>
-            <li>
-              <a
-                href="/about"
-                className="text-primary-contrast hover:text-secondary-contrast"
-              >
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a
-                href="/projects"
-                className="text-primary-contrast hover:text-secondary-contrast"
-              >
-                Projetos
-              </a>
-            </li>
-            <li>
-              <a
-                href="/contact"
-                className="text-primary-contrast hover:text-secondary-contrast"
-              >
-                Contato
-              </a>
-            </li>
-          </ul>
+        <nav className="w-screen sm:w-auto flex justify-around gap-4 items-center text-xs sm:text-md md:text-xl">
+          <a
+            href="/"
+            className="text-primary-contrast hover:text-secondary-contrast"
+          >
+            Início
+          </a>
+          <a
+            href="/about"
+            className="text-primary-contrast hover:text-secondary-contrast"
+          >
+            Sobre
+          </a>
+          <a
+            href="/projects"
+            className="text-primary-contrast hover:text-secondary-contrast"
+          >
+            Projetos
+          </a>
+          <a
+            href="/contact"
+            className="text-primary-contrast hover:text-secondary-contrast"
+          >
+            Contato
+          </a>
         </nav>
       </div>
     </header>
