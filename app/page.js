@@ -10,7 +10,7 @@ const Home = () => {
         <h1 className="text-primary dark:text-primary-contrast text-2xl md:text-4xl font-bold text-center">
           Gustavo Amamia Kumagai
         </h1>
-        <h2 className="text-primary-contrast text-lg md:text-2xl text-center">
+        <h2 className="text-primary dark:text-primary-contrast text-lg md:text-2xl text-center">
           Desenvolvedor de Software
         </h2>
       </section>
