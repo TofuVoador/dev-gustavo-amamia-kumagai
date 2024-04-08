@@ -4,7 +4,10 @@ const Header = () => {
   return (
     <header className="bg-primary py-4 fixed w-full bottom-0 sm:bottom-auto sm:top-0">
       <div className="container mx-auto flex justify-center sm:justify-between items-center">
-        <a href="/" className=" font-bold hidden sm:flex text-xs lg:text-2xl">
+        <a
+          href="/"
+          className="text-primary-contrast font-bold hidden sm:flex text-xs lg:text-2xl"
+        >
           Gustavo Amamia Kumagai
         </a>
         <nav>
