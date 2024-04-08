@@ -1,27 +1,40 @@
-import Card from "@/components/Card";
 import React from "react";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "1",
-      desc: "1",
-      dir: "1",
-    },
-    {
-      title: "2",
-      desc: "2",
-      dir: "2",
-    },
-  ];
-
   return (
     <section className="container mx-auto mt-8 mb-16">
       <h1 className="text-3xl font-bold text-center mb-4">Projetos</h1>
-      <div className="bg-dark p-2 rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {projects.map((project) => (
-          <Card title={project.title} desc={project.desc} dir={project.dir} />
-        ))}
+      <div className="bg-dark p-2 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
+          <p className="text-sm text-secondary-contrast">React</p>
+          <h2 className="text-primary-contrast text-lg font-semibold">
+            Football Career Simulator
+          </h2>
+          <p className="text-sm text-secondary-contrast mb-2">
+            Simulador de Carreira no Futebol
+          </p>
+          <a
+            href="https://football-career.vercel.app/"
+            className="bg-primary-contrast text-primary p-1 rounded-md hover:bg-secondary-contrast"
+          >
+            Jogar!
+          </a>
+        </div>
+        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
+          <p className="text-sm text-secondary-contrast">PHP, HTML, SQL</p>
+          <h2 className="text-primary-contrast text-xl font-semibold">
+            Sischeck-BM
+          </h2>
+          <p className="text-sm text-secondary-contrast mb-2">
+            Sistema de Checagem de Veículos para Corpo de Bombeiros
+          </p>
+          <a
+            href="https://github.com/TofuVoador/sischeck-bm"
+            className="bg-primary-contrast text-primary p-1 rounded-md hover:bg-secondary-contrast"
+          >
+            Github
+          </a>
+        </div>
       </div>
     </section>
   );
