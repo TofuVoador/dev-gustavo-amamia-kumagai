@@ -24,6 +24,23 @@ const Projects = () => {
           </a>
         </div>
         <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
+          <p className="text-sm text-secondary-contrast">React</p>
+          <h2 className="text-primary-contrast text-lg font-semibold">
+            Football Career Simulator
+          </h2>
+          <p className="text-sm text-secondary-contrast mb-2">
+            Simulador de Carreira no Futebol
+          </p>
+          <a
+            onClick={() => {
+              window.open("https://football-career.vercel.app/", "_blank");
+            }}
+            className="bg-primary-contrast text-primary p-1 rounded-md hover:bg-secondary-contrast"
+          >
+            Jogar!
+          </a>
+        </div>
+        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
           <p className="text-sm text-secondary-contrast">PHP, HTML, SQL</p>
           <h2 className="text-primary-contrast text-xl font-semibold">
             Sischeck-BM
@@ -41,6 +58,26 @@ const Projects = () => {
             className="bg-primary-contrast text-primary p-1 rounded-md hover:bg-secondary-contrast"
           >
             Github
+          </a>
+        </div>
+        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
+          <p className="text-sm text-secondary-contrast">React</p>
+          <h2 className="text-primary-contrast text-lg font-semibold">
+            Task List
+          </h2>
+          <p className="text-sm text-secondary-contrast mb-2">
+            Lista de Tarefas com Horários e Marcadores
+          </p>
+          <a
+            onClick={() => {
+              window.open(
+                "https://react-task-list-ruddy.vercel.app/",
+                "_blank"
+              );
+            }}
+            className="bg-primary-contrast text-primary p-1 rounded-md hover:bg-secondary-contrast"
+          >
+            Usar!
           </a>
         </div>
       </div>
