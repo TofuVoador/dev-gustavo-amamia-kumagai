@@ -11,7 +11,7 @@ const Home = () => {
           Gustavo Amamia Kumagai
         </h1>
         <h2 className="text-primary dark:text-primary-contrast text-lg md:text-2xl text-center">
-          Desenvolvedor de Software
+          Analista de Sistemas
         </h2>
       </section>
       <About />

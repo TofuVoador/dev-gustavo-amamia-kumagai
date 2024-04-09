@@ -1,4 +1,5 @@
 "use client";
+import Card from "@/components/Card";
 import React from "react";
 
 const Projects = () => {
@@ -8,63 +9,27 @@ const Projects = () => {
         Projetos
       </h1>
       <div className="bg-transparent sm:bg-dark p-2 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <p className="text-sm text-secondary-contrast">React</p>
-          <h2 className="text-primary-contrast text-lg font-semibold">
-            Football Career Simulator
-          </h2>
-          <p className="text-sm text-secondary-contrast mb-2">
-            Simulador de Carreira no Futebol
-          </p>
-          <a
-            onClick={() => {
-              window.open("https://football-career.vercel.app/", "_blank");
-            }}
-            className="bg-primary-contrast text-primary p-1 rounded-md hover:bg-secondary-contrast"
-          >
-            Jogar!
-          </a>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <p className="text-sm text-secondary-contrast">PHP, HTML, SQL</p>
-          <h2 className="text-primary-contrast text-xl font-semibold">
-            Sischeck-BM
-          </h2>
-          <p className="text-sm text-secondary-contrast mb-2">
-            Sistema de Checagem de Veículos para Corpo de Bombeiros
-          </p>
-          <a
-            onClick={() => {
-              window.open(
-                "https://github.com/TofuVoador/sischeck-bm",
-                "_blank"
-              );
-            }}
-            className="bg-primary-contrast text-primary p-1 rounded-md hover:bg-secondary-contrast"
-          >
-            Github
-          </a>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <p className="text-sm text-secondary-contrast">React</p>
-          <h2 className="text-primary-contrast text-lg font-semibold">
-            Task List
-          </h2>
-          <p className="text-sm text-secondary-contrast mb-2">
-            Lista de Tarefas com Horários e Marcadores
-          </p>
-          <a
-            onClick={() => {
-              window.open(
-                "https://react-task-list-ruddy.vercel.app/",
-                "_blank"
-              );
-            }}
-            className="bg-primary-contrast text-primary p-1 rounded-md hover:bg-secondary-contrast"
-          >
-            Usar!
-          </a>
-        </div>
+        <Card
+          title="Football Career Simulator"
+          tags={["React", "JavaScript"]}
+          description="Simulador de Carreira no Futebol"
+          link="https://football-career.vercel.app/"
+          actionCall="Jogar!"
+        />
+        <Card
+          title="Sischeck-BM"
+          tags={["PHP", "HTML", "SQL"]}
+          description="Sistema de Checagem de Veículos para Corpo de Bombeiros"
+          link="https://github.com/TofuVoador/sischeck-bm"
+          actionCall="Github"
+        />
+        <Card
+          title="Task List"
+          tags={["React", "JavaScript"]}
+          description="Lista de Tarefas com Horários e Marcadores"
+          link="https://react-task-list-ruddy.vercel.app/"
+          actionCall="Usar!"
+        />
       </div>
     </section>
   );
