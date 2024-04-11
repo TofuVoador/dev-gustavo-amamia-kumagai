@@ -1,20 +1,21 @@
-import { Inter } from "next/font/google";
+import { Lora, Quicksand } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const lora = Lora({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Gustavo Amamia Kumagai",
-  description: "Portifolio Dev",
+  description: "Portifolio Dev de Gustavo",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>
+      <body className={lora.className}>
         <Header />
-        <main>{children}</main>
+        <main className={quicksand.className}>{children}</main>
       </body>
     </html>
   );
