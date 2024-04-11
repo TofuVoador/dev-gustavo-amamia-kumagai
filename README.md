@@ -5,5 +5,6 @@ Este projeto é uma exposição de minhas habilidades e experiência em desenvol
 ## Contact Information
 
 - **Email:** iagamuk.gus@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/gustavo-amamia-kumagai-293b421a3/)
-- **GitHub:** [Your GitHub Profile](https://github.com/TofuVoador)
+- **Whatsapp:** (44) 988150190
+- **LinkedIn:** [Gustavo Amamia Kumagai](https://www.linkedin.com/in/gustavo-amamia-kumagai-293b421a3/)
+- **GitHub:** [@TofuVoador](https://github.com/TofuVoador)
