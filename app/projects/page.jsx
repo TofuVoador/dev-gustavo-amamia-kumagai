@@ -24,6 +24,13 @@ const Projects = () => {
           actionCall="Github"
         />
         <Card
+          title="Cities Data"
+          tags={["Next", "API", "JavaScript"]}
+          description="Busque informações sobre cidades e países"
+          link="https://city-data-pi.vercel.app/"
+          actionCall="Usar!"
+        />
+        <Card
           title="Task List"
           tags={["React", "JavaScript"]}
           description="Lista de Tarefas com Horários e Marcadores"
