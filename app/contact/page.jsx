@@ -9,7 +9,9 @@ const Contact = () => {
       </h1>
       <div className="bg-transparent sm:bg-dark p-2 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h3 className="text-lg text-primary-contrast mb-2">Whatsapp</h3>
+          <h3 className="text-lg text-primary-contrast mb-2 font-semibold">
+            Whatsapp
+          </h3>
           <a
             onClick={() => {
               window.open("https://wa.me/5544988150190", "_blank");
@@ -20,7 +22,9 @@ const Contact = () => {
           </a>
         </div>
         <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h3 className="text-lg text-primary-contrast mb-2">GitHub</h3>
+          <h3 className="text-lg text-primary-contrast mb-2 font-semibold">
+            GitHub
+          </h3>
           <a
             onClick={() => {
               window.open("https://github.com/TofuVoador", "_blank");
@@ -31,7 +35,9 @@ const Contact = () => {
           </a>
         </div>
         <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h3 className="text-lg text-primary-contrast mb-2">Email</h3>
+          <h3 className="text-lg text-primary-contrast mb-2 font-semibold">
+            Email
+          </h3>
           <a
             onClick={() => {
               navigator.clipboard.writeText("iagamuk.gus@gmail.com");

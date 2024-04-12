@@ -1,6 +1,17 @@
 import React from "react";
 
 const About = () => {
+  const skills = [
+    { title: "HTML & CSS", level: "Intermediário" },
+    { title: "PHP", level: "Intermediário" },
+    { title: "SQL", level: "Intermediário" },
+    { title: "NextJS", level: "Básico" },
+    { title: "ReactJS", level: "Básico" },
+    { title: "Tailwind", level: "Básico" },
+    { title: "NodeJS", level: "Básico" },
+    { title: "Git", level: "Básico" },
+    { title: "Inglês", level: "Avançado" },
+  ];
   return (
     <section className="container mx-auto mt-32 mb-16">
       <h1 className="text-primary dark:text-primary-contrast text-xl font-bold text-center mb-4">
@@ -38,60 +49,19 @@ const About = () => {
         Competências
       </h1>
       <div className="bg-transparent sm:bg-dark p-2 rounded-lg grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h2 className="text-lg text-primary-contrast">HTML & CSS</h2>
-          <h3 className="text-sm text-secondary-contrast font-semibold mb-2">
-            Intermediário
-          </h3>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h2 className="text-lg text-primary-contrast">PHP</h2>
-          <h3 className="text-sm text-secondary-contrast font-semibold mb-2">
-            Intermediário
-          </h3>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h2 className="text-lg text-primary-contrast">SQL</h2>
-          <h3 className="text-sm text-secondary-contrast font-semibold mb-2">
-            Intermediário
-          </h3>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h2 className="text-lg text-primary-contrast">NextJS</h2>
-          <h3 className="text-sm text-secondary-contrast font-semibold mb-2">
-            Báscio
-          </h3>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h2 className="text-lg text-primary-contrast">ReactJS</h2>
-          <h3 className="text-sm text-secondary-contrast font-semibold mb-2">
-            Báscio
-          </h3>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h2 className="text-lg text-primary-contrast">Tailwind</h2>
-          <h3 className="text-sm text-secondary-contrast font-semibold mb-2">
-            Báscio
-          </h3>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h2 className="text-lg text-primary-contrast">NodeJS</h2>
-          <h3 className="text-sm text-secondary-contrast font-semibold mb-2">
-            Báscio
-          </h3>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h2 className="text-lg text-primary-contrast">Git</h2>
-          <h3 className="text-sm text-secondary-contrast font-semibold mb-2">
-            Básico
-          </h3>
-        </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
-          <h2 className="text-lg text-primary-contrast">Inglês</h2>
-          <h3 className="text-sm text-secondary-contrast font-semibold mb-2">
-            Avançado
-          </h3>
-        </div>
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="bg-secondary p-4 rounded-lg shadow-sm shadow-black"
+          >
+            <h2 className="text-lg text-primary-contrast font-semibold">
+              {skill.title}
+            </h2>
+            <h3 className="text-sm text-secondary-contrast mb-2">
+              {skill.level}
+            </h3>
+          </div>
+        ))}
       </div>
     </section>
   );
