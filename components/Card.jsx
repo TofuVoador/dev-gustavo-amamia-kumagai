@@ -8,7 +8,7 @@ const Card = (props) => {
         {tags.map((tag) => (
           <p
             key={title + tag}
-            className="bg-secondary-contrast px-1 py-0.5 rounded-sm"
+            className="bg-secondary-contrast px-1 py-0.5 text-center rounded-sm"
           >
             {tag}
           </p>
@@ -21,7 +21,7 @@ const Card = (props) => {
           onClick={() => {
             window.open(link, "_blank");
           }}
-          className="text-xs bg-primary-contrast text-primary px-2 py-1 rounded-md hover:bg-secondary-contrast float-end"
+          className="text-xs bg-primary-contrast text-primary px-2 py-1 text-center rounded-md hover:bg-secondary-contrast float-end"
         >
           {actionCall != null ? actionCall : "Mais Informações"}
         </a>
