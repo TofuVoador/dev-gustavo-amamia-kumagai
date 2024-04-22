@@ -23,25 +23,17 @@ const About = () => {
           <h2 className="text-xl font-semibold text-primary-contrast">
             Análise e Desenvolvimento de Sistemas
           </h2>
-          <p className="text-md text-secondary-contrast">
-            Instituto Federal do Paraná
-          </p>
+          <p className="text-md text-secondary-contrast">Instituto Federal do Paraná</p>
           <p className="text-md text-secondary-contrast">Março/2024</p>
         </div>
         <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
           <h3 className="text-xs text-secondary-contrast">Experiência</h3>
-          <h2 className="text-xl font-semibold text-primary-contrast">
-            Estagiário Administrativo
-          </h2>
-          <p className="text-md text-secondary-contrast">
-            Corpo de Bombeiros de Umuarama
-          </p>
-          <p className="text-md text-secondary-contrast">
-            Julho/2022 - Dezembro/2023
-          </p>
+          <h2 className="text-xl font-semibold text-primary-contrast">Estagiário Administrativo</h2>
+          <p className="text-md text-secondary-contrast">Corpo de Bombeiros de Umuarama</p>
+          <p className="text-md text-secondary-contrast">Julho/2022 - Dezembro/2023</p>
           <p className="p-2 text-xs text-secondary-contrast text-justify">
-            Edição de planilhas, lançamento de dados no sistema, controle de
-            orçamentos, gerenciamento de licitações
+            Edição de planilhas, lançamento de dados no sistema, controle de orçamentos,
+            gerenciamento de licitações
           </p>
         </div>
       </div>
@@ -50,16 +42,9 @@ const About = () => {
       </h1>
       <div className="bg-transparent sm:bg-dark p-2 rounded-lg grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="bg-secondary p-4 rounded-lg shadow-sm shadow-black"
-          >
-            <h2 className="text-lg text-primary-contrast font-semibold">
-              {skill.title}
-            </h2>
-            <h3 className="text-sm text-secondary-contrast mb-2">
-              {skill.level}
-            </h3>
+          <div key={index} className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
+            <h2 className="text-lg text-primary-contrast font-semibold">{skill.title}</h2>
+            <h3 className="text-sm text-secondary-contrast mb-2">{skill.level}</h3>
           </div>
         ))}
       </div>

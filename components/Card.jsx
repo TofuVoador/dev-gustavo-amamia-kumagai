@@ -6,10 +6,7 @@ const Card = (props) => {
     <div className="bg-secondary p-4 rounded-lg shadow-sm shadow-black">
       <div className="text-xs text-secondary flex gap-1 mb-1">
         {tags.map((tag) => (
-          <p
-            key={title + tag}
-            className="bg-secondary-contrast px-1 py-0.5 text-center rounded-sm"
-          >
+          <p key={title + tag} className="bg-secondary-contrast px-1 py-0.5 text-center rounded-sm">
             {tag}
           </p>
         ))}
