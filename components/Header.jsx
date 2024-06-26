@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-primary py-4 fixed w-full bottom-0 sm:bottom-auto sm:top-0">
+    <header className="bg-primary py-4 fixed w-full bottom-0 sm:bottom-auto sm:top-0 border-t-2 border-white sm:border-none">
       <div className="text-white container mx-auto flex justify-center sm:justify-between items-center">
         <a href="/" className="font-bold hidden sm:flex text-xs lg:text-2xl">
           Gustavo Amamia Kumagai
