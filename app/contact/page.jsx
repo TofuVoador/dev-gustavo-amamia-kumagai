@@ -4,8 +4,8 @@ import React from "react";
 const Contact = () => {
   return (
     <section className="container mx-auto mt-32 mb-16">
-      <h1 className="text-primary dark:text-white text-xl font-bold text-center mb-4">Contato</h1>
-      <div className="bg-transparent sm:bg-secondary p-2 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <h1 className="text-primary dark:text-white text-3xl font-bold text-center mb-4">Contato</h1>
+      <div className="bg-transparent sm:bg-secondary p-4 rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div className="bg-primary p-4 rounded-lg shadow-sm shadow-black">
           <h3 className="text-lg text-white mb-2 font-semibold">Whatsapp</h3>
           <a
@@ -23,7 +23,7 @@ const Contact = () => {
             onClick={() => {
               window.open("https://github.com/TofuVoador", "_blank");
             }}
-            className="text-gray-400 text-sm bg-transparent hover:bg-secondary hover:cursor-pointer border-gray-400 border-2 rounded-md px-2 py-1"
+            className="text-gray-800 text-sm bg-transparent hover:bg-secondary hover:cursor-pointer border-gray-800 border-2 rounded-md px-2 py-1"
           >
             @TofuVoador
           </a>
